@@ -1,0 +1,235 @@
+#root {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  vertical-align: middle;
+}
+* {
+  box-sizing: border-box;
+}
+//覆盖nav原有(antd)的高度和背景颜色
+.ant-layout-header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #000;
+  padding: 0;
+}
+
+.indexHeaderLeft {
+  display: flex;
+  -moz-box-align: center; //?
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+  user-select: none; //?
+  float: left;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.indexHeaderLeft > .hamburgerMenu {
+  width: 16px;
+  height: 17px;
+  fill: #848484;
+  line-height: 16px;
+  cursor: pointer;
+}
+.indexHeaderLeft > .hamburgerMenu :hover {
+  fill: #2373e4;
+}
+
+.infaLogo {
+  width: 123px;
+  height: 30px;
+  background-image: url('./images/infa-logo.svg');
+}
+.indexHeaderLeft > .indexHeaderProductName {
+  color: white;
+}
+.indexHeaderLeft > .indexHeaderProductName:hover {
+  color: #39f;
+}
+
+.indexHeaderRight {
+  height: 100%;
+  width: 150px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  .indexNotiMenu,
+  .indexUserMenu,
+  .indexHelpMenu {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    fill: #848484;
+  }
+}
+.indexNotiMenu:hover,
+.indexUserMenu:hover,
+.indexHelpMenu:hover {
+  background-color: #39f;
+  border-radius: 50%;
+  fill: white;
+}
+
+/*
+//------------------------产品模态框样式-------------
+//模态框标题
+.ant-modal-header{
+  padding: 0 !important;
+}
+.products-header{
+  background-color: #000;
+  padding-left: 15px;
+  padding-right: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.common-indexHeaderImage{
+  width: 123px;
+  height: 30px;
+  background-image: url('./images/infa-logo.svg');
+}
+.products-header>.title{
+  color: white;
+  margin-left: 10px;
+  margin-right: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300px;
+  font-size: 13px;
+}
+
+//覆盖又有modal样式
+.ant-modal-body{
+    background-color: #eee;
+    padding: 0 24px 0 24px !important;
+  }
+//模态框 关闭图标设置为白色
+.ant-modal-close-x{ color :white }
+ //覆盖card组件的高度
+ .ant-card{ height: 400px; overflow-y: auto;overflow-x: hidden } 
+
+ //覆盖card组件的边距
+ .ant-card-body{ padding: 12px !important; }
+  
+  //My Services
+  .products-services-type-title{
+    font-size: 15px;
+    font-family: 'futura-pt';
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  //----主要内容
+  //每一个服务框框的样式
+  .product-row{
+    width:760px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    //justify-content: space-between;
+    flex-wrap:wrap;
+  }
+  .product-cell{
+    width: 240px;
+    height: 100px;
+    background-image:  url(./images/cloud_shape_active.svg);
+    border: 1px solid #ff7d00;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+    position: relative;
+    cursor: pointer;
+    margin: 5px
+  }
+  .default-corner{
+    height: 16px;
+    text-align: left;
+    line-height: 16px;
+    color: black;
+    //鼠标移入的颜色 color: #3399FF;
+    font-size: 12px;
+    font-family: 'futura-pt';
+    margin: 8px;
+  }
+  .default-check-img,.set-default-text {
+    display: none
+  }
+  //鼠标移入显示图标
+  .product-cell:hover{
+    border: 1px solid #2373E4;
+    .default-check-img{
+      display: inline-block;
+    }
+    .info-container{
+      visibility: visible;
+    }
+  }
+  .default-check-img:hover{
+    color:  #2373E4;
+  }
+  
+  .product-name{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    line-height: normal;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    color: #373737;
+  }
+  //右下角产品信息简介
+  .info-container{
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url(./images/cloud_application_info.svg);
+    background-repeat: no-repeat;
+  }
+  */
+//-------------------slide
+//重置整个侧滑div的背景
+
+.ant-layout-sider {
+  background: #414042;
+}
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  background: #414042 !important;
+}
+//选中菜单后的颜色
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: #000 !important;
+}
+//重置每一个menuitem的margin
+.ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-vertical-left .ant-menu-submenu-title,
+.ant-menu-vertical-right .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+  margin-top: 2px !important;
+}
+.ant-menu-inline-collapsed > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  padding: 0 24px !important;
+}
