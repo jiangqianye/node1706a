@@ -1,0 +1,99 @@
+//@import "~antd/dist/antd.less";
+
+.ant-layout,
+#root {
+  height: 100%;
+}
+//头部
+.zxLayout-header {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+//头部左边
+.zxLayout-headerLeft {
+  width: 300px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+//头部右边
+.zxLayout-headerRight {
+  width: 150px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+//头部左边，侧滑菜单的收缩按钮
+.zxLayout-slideBtn {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+.zxLayout-slideBtn > .trigger {
+  font-size: 18px;
+  transition: color 0.3s;
+  color: lightgray;
+}
+.zxLayout-slideBtn > .trigger:hover {
+  color: #1890ff;
+}
+
+//头部左边， logo
+.zxLayout-logo {
+  width: 120px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+//头部左边  可以弹出产品列表的按钮
+.zxLayout-open_products_btn {
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+.zxLayout-open_products_btn:hover {
+  color: #1c86bd;
+}
+
+//头部右边
+.zxLayout-notification-icon,
+.zxLayout-user-icon,
+.zxLayout-help-icon {
+  border-radius: 50%;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  border: 1px solid rebeccapurple;
+}
+.zxLayout-notification-icon:hover,
+.zxLayout-user-icon:hover,
+.zxLayout-help-icon:hover {
+  background: #39f;
+}
+
+//
+.zxLayout-sider {
+  width: 200px;
+}
+
+//------------------------------------------------------------------------
+.productModalContainer {
+  width: 100px;
+  height: 100px;
+  background: #1890ff;
+}
